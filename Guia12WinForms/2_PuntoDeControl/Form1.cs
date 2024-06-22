@@ -44,16 +44,15 @@ namespace _2_PuntoDeControl
         private void btnVerEstadistica_Click(object sender, EventArgs e)
         {
             ModalVerListado modalVer = new ModalVerListado();
+            modalVer.lbResultados.Items.Clear();
+            modalVer.lbResultados.Items.Add("Vehiculos registrados: " + controladora.contador);
+            modalVer.lbResultados.Items.Add("VEHICULOS ELECTRICOS");
             controladora.OrdenarElectricos();
-            for (int i = 0; i< controladora.contadorElectricos; i++)
+            for (int i = 0; i < controladora.contadorElectricos; i++)
             {
                 modalVer.lbResultados.Items.Add(controladora.patentesElectricos[i] + " - " + controladora.tiposVehiculosElectricos[i] + " - " + controladora.modelosElectricos[i]);
             }
             modalVer.ShowDialog();
-            if(modalVer.DialogResult == DialogResult.Cancel) 
-            {
-                modalVer.lbResultados.Items.Clear();
-            }
         }
     }
 }

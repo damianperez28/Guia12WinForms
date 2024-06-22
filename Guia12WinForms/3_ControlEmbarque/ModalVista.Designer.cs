@@ -1,6 +1,6 @@
-﻿namespace _2_PuntoDeControl
+﻿namespace _3_ControlEmbarque
 {
-    partial class ModalVerListado
+    partial class ModalVista
     {
         /// <summary>
         /// Required designer variable.
@@ -28,43 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbResultados = new System.Windows.Forms.ListBox();
+            this.lbVista = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lbResultados
+            // lbVista
             // 
-            this.lbResultados.FormattingEnabled = true;
-            this.lbResultados.Location = new System.Drawing.Point(27, 35);
-            this.lbResultados.Name = "lbResultados";
-            this.lbResultados.Size = new System.Drawing.Size(553, 199);
-            this.lbResultados.TabIndex = 0;
+            this.lbVista.FormattingEnabled = true;
+            this.lbVista.Location = new System.Drawing.Point(12, 31);
+            this.lbVista.Name = "lbVista";
+            this.lbVista.Size = new System.Drawing.Size(469, 186);
+            this.lbVista.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.Location = new System.Drawing.Point(262, 255);
+            this.button1.Location = new System.Drawing.Point(211, 230);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Salir";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // ModalVerListado
+            // ModalVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 296);
+            this.ClientSize = new System.Drawing.Size(492, 265);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.lbResultados);
-            this.Name = "ModalVerListado";
-            this.Text = "ModalVerListado";
+            this.Controls.Add(this.lbVista);
+            this.Name = "ModalVista";
+            this.Text = "ModalVista";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        public System.Windows.Forms.ListBox lbResultados;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.ListBox lbVista;
     }
 }

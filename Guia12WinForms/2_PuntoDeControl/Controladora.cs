@@ -31,6 +31,7 @@ namespace _2_PuntoDeControl
 
         public void OrdenarElectricos()
         {
+            contadorElectricos = 0;
             for(int i = 0; i < contador; i++)
             {
                 if (SonElectricos[i] == true)
